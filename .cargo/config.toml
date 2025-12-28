@@ -1,0 +1,6 @@
+# 适配64位Windows + MSVC编译器（Rust默认）
+[target.x86_64-pc-windows-msvc]
+rustflags = [
+    # 指定Packet.lib所在的目录（路径用 / 或 \\，不能用 \）
+    "-L", "C:/Program Files/Npcap/Lib/x64",
+]
